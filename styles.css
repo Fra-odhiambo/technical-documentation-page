@@ -1,0 +1,73 @@
+/* CSS styling and media queries go here */
+@media (min-width: 768px) {
+    /* Media query styles for larger screens */
+    #navbar {
+      position: fixed;
+      left: 0;
+    }
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  #navbar .nav-link {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  #main-doc {
+    margin-top: 60px; 
+  }
+  
+  .main-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .main-section header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .main-section p {
+    margin-bottom: 10px;
+  }
+  
+  .main-section code {
+    display: block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .main-section ul {
+    list-style-type: square;
+  }
+  
+  .main-section li {
+    margin-bottom: 5px;
+  }
+  

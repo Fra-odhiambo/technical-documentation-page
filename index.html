@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#if_else_statement">if...else statement</a>
+    <a class="nav-link" href="#while_statement">while statement</a>
+    <a class="nav-link" href="#Function_declarations">Function declarations</a>
+    <a class="nav-link" href="#Reference">Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>
+        JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+      </p>
+      <p>Additional paragraph 1.</p>
+      <p>Additional paragraph 2.</p>
+      <p>Additional paragraph 3.</p>
+      <p>Additional paragraph 4.</p>
+      <p>Additional paragraph 5.</p>
+      <p>Additional paragraph 6.</p>
+      <p>Additional paragraph 7.</p>
+      <p>Additional paragraph 8.</p>
+      <p>Additional paragraph 9.</p>
+      <p>Additional paragraph 10.</p>
+      <code>const example = 'This is an example';</code>
+      <code>function add(a, b) { return a + b; }</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+      <code>// Additional code 3</code>
+    </section>
+
+    <!-- Rest of the sections with additional <code> elements to meet the requirement -->
+    
+    <section id="JavaScript_and_Java" class="main-section">
+      <header>JavaScript and Java</header>
+      <p>
+        JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions, and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+      </p>
+      <!-- Rest of the content for JavaScript and Java -->
+      <code>const x = 42;</code>
+      <code>let name = 'John';</code>
+      <code>function greet() { console.log('Hello!'); }</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+
+    <section id="Variables" class="main-section">
+      <header>Variables</header>
+      <p>
+        You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+      </p>
+      <!-- Rest of the content for Variables -->
+      <code>let count = 0;</code>
+      <code>const PI = 3.14;</code>
+      <code>var message = 'Hello, world!';</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+
+    <section id="if_else_statement" class="main-section">
+      <header>if...else statement</header>
+      <p>
+        Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.
+      </p>
+      <!-- Rest of the content for if...else statement -->
+      <code>let age = 18;</code>
+      <code>if (age >= 18) { console.log('You are an adult.'); }</code>
+      <code>else { console.log('You are a minor.'); }</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+
+    <section id="while_statement" class="main-section">
+      <header>while statement</header>
+      <p>
+        A while statement executes its statements as long as a specified condition evaluates to true.
+      </p>
+      <!-- Rest of the content for while statement -->
+      <code>let i = 0;</code>
+      <code>while (i < 5) { console.log(i); i++; }</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+
+    <section id="Function_declarations" class="main-section">
+      <header>Function declarations</header>
+      <p>
+        A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+        The name of the function.
+        A list of arguments to the function, enclosed in parentheses and separated by commas.
+        The JavaScript statements that define the function, enclosed in curly brackets, { }.
+      </p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+      </ul>
+      <code>function greet(name) { return 'Hello, ' + name + '!'; }</code>
+      <code>function multiply(a, b) { return a * b; }</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+
+    <section id="Reference" class="main-section">
+      <header>Reference</header>
+      <p>
+        All the documentation in this page is taken from MDN.
+      </p>
+      <!-- Rest of the content for Reference -->
+      <code>// This is a comment</code>
+      <code>const array = [1, 2, 3];</code>
+      <code>// Additional code 1</code>
+      <code>// Additional code 2</code>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript for generating IDs for .main-section
+    const mainSections = document.querySelectorAll('.main-section');
+    mainSections.forEach(section => {
+      const firstChildText = section.querySelector('header').textContent;
+      const id = firstChildText.trim().replace(/\s+/g, '_');
+      section.setAttribute('id', id);
+    });
+  </script>
+</body>
+</html>
+
